@@ -4,6 +4,8 @@ const morgan = require('morgan');
 const app = express();
 app.use(morgan('dev'));
 
+console.log('hi');
+
 app.get('/sum', (req,res) => {
     const firstInteger = Number(req.query.a);
     const secondInteger = Number(req.query.b);
